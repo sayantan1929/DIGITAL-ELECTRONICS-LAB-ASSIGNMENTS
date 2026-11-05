@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+
+  <lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <wire from="(80,120)" to="(100,120)"/>
+    <wire from="(80,190)" to="(100,190)"/>
+    <wire from="(80,260)" to="(100,260)"/>
+    <wire from="(80,330)" to="(100,330)"/>
+    <wire from="(80,380)" to="(100,380)"/>
+    <wire from="(210,450)" to="(230,450)"/>
+    <wire from="(210,500)" to="(230,500)"/>
+    <wire from="(260,450)" to="(280,450)"/>
+    <wire from="(260,500)" to="(280,500)"/>
+    <wire from="(410,270)" to="(430,270)"/>
+    <wire from="(410,290)" to="(430,290)"/>
+    <wire from="(410,310)" to="(430,310)"/>
+    <wire from="(430,130)" to="(450,130)"/>
+    <wire from="(430,150)" to="(450,150)"/>
+    <wire from="(430,200)" to="(450,200)"/>
+    <wire from="(430,220)" to="(450,220)"/>
+    <wire from="(430,360)" to="(450,360)"/>
+    <wire from="(430,380)" to="(450,380)"/>
+    <wire from="(430,430)" to="(450,430)"/>
+    <wire from="(430,450)" to="(450,450)"/>
+    <wire from="(430,500)" to="(450,500)"/>
+    <wire from="(430,520)" to="(450,520)"/>
+    <wire from="(480,140)" to="(500,140)"/>
+    <wire from="(480,210)" to="(500,210)"/>
+    <wire from="(480,290)" to="(500,290)"/>
+    <wire from="(480,370)" to="(500,370)"/>
+    <wire from="(480,440)" to="(500,440)"/>
+    <wire from="(480,510)" to="(500,510)"/>
+    <wire from="(700,150)" to="(720,150)"/>
+    <wire from="(700,170)" to="(720,170)"/>
+    <wire from="(700,290)" to="(720,290)"/>
+    <wire from="(700,310)" to="(720,310)"/>
+    <wire from="(710,160)" to="(710,200)"/>
+    <wire from="(710,160)" to="(720,160)"/>
+    <wire from="(710,300)" to="(710,340)"/>
+    <wire from="(710,300)" to="(720,300)"/>
+    <wire from="(710,450)" to="(730,450)"/>
+    <wire from="(710,470)" to="(730,470)"/>
+    <wire from="(710,520)" to="(730,520)"/>
+    <wire from="(710,540)" to="(730,540)"/>
+    <wire from="(750,180)" to="(750,200)"/>
+    <wire from="(750,320)" to="(750,340)"/>
+    <wire from="(760,150)" to="(780,150)"/>
+    <wire from="(760,170)" to="(780,170)"/>
+    <wire from="(760,290)" to="(780,290)"/>
+    <wire from="(760,310)" to="(780,310)"/>
+    <wire from="(760,460)" to="(780,460)"/>
+    <wire from="(760,530)" to="(780,530)"/>
+    <wire from="(930,160)" to="(960,160)"/>
+    <wire from="(930,200)" to="(960,200)"/>
+    <wire from="(930,240)" to="(960,240)"/>
+    <wire from="(930,280)" to="(960,280)"/>
+    <wire from="(930,340)" to="(960,340)"/>
+    <wire from="(930,380)" to="(960,380)"/>
+    <comp lib="6" loc="(420,40)" name="Text">
+      <a name="text" val="Lab 7  Automatic Parking-Barrier Controller (Moore FSM, 2 JK FFs)"/>
+      <a name="halign" val="center"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="6" loc="(420,65)" name="Text">
+      <a name="text" val="S0 CLOSED=00   S1 OPEN=01   S2 CAR UNDER=11   S3 CLOSING=10   (Q1 Q0)"/>
+      <a name="halign" val="center"/>
+    </comp>
+    <comp lib="0" loc="(80,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(100,120)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="6" loc="(150,150)" name="Text">
+      <a name="text" val="A = car at entry with valid ticket"/>
+      <a name="halign" val="center"/>
+    </comp>
+    <comp lib="0" loc="(80,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+    </comp>
+    <comp lib="0" loc="(100,190)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="S"/>
+    </comp>
+    <comp lib="6" loc="(150,220)" name="Text">
+      <a name="text" val="S = car under barrier (loop sensor)"/>
+      <a name="halign" val="center"/>
+    </comp>
+    <comp lib="0" loc="(80,260)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="F"/>
+    </comp>
+    <comp lib="0" loc="(100,260)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="F"/>
+    </comp>
+    <comp lib="6" loc="(150,290)" name="Text">
+      <a name="text" val="F = lot FULL"/>
+      <a name="halign" val="center"/>
+    </comp>
+    <comp lib="0" loc="(80,330)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(100,330)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(80,380)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLR"/>
+    </comp>
+    <comp lib="0" loc="(100,380)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="CLR"/>
+    </comp>
+    <comp lib="1" loc="(260,450)" name="NOT Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="0" loc="(210,450)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="S"/>
+    </comp>
+    <comp lib="0" loc="(280,450)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="nS"/>
+    </comp>
+    <comp lib="1" loc="(260,500)" name="NOT Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="0" loc="(210,500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="F"/>
+    </comp>
+    <comp lib="0" loc="(280,500)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="nF"/>
+    </comp>
+    <comp lib="6" loc="(470,100)" name="Text">
+      <a name="text" val="Next-state (excitation) logic"/>
+      <a name="halign" val="center"/>
+    </comp>
+    <comp lib="1" loc="(480,140)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(430,130)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Q0"/>
+    </comp>
+    <comp lib="0" loc="(430,150)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="S"/>
+    </comp>
+    <comp lib="0" loc="(500,140)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="J1"/>
+    </comp>
+    <comp lib="1" loc="(480,210)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(430,200)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="nQ0"/>
+    </comp>
+    <comp lib="0" loc="(430,220)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="nS"/>
+    </comp>
+    <comp lib="0" loc="(500,210)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="K1"/>
+    </comp>
+    <comp lib="1" loc="(480,290)" name="AND Gate">
+      <a name="size" val="50"/>
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="0" loc="(410,270)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="nQ1"/>
+    </comp>
+    <comp lib="0" loc="(410,290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(410,310)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="nF"/>
+    </comp>
+    <comp lib="0" loc="(500,290)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="X"/>
+    </comp>
+    <comp lib="1" loc="(480,370)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(430,360)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Q1"/>
+    </comp>
+    <comp lib="0" loc="(430,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="S"/>
+    </comp>
+    <comp lib="0" loc="(500,370)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="Y"/>
+    </comp>
+    <comp lib="1" loc="(480,440)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(430,430)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="X"/>
+    </comp>
+    <comp lib="0" loc="(430,450)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Y"/>
+    </comp>
+    <comp lib="0" loc="(500,440)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="J0"/>
+    </comp>
+    <comp lib="1" loc="(480,510)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(430,500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Q1"/>
+    </comp>
+    <comp lib="0" loc="(430,520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="nS"/>
+    </comp>
+    <comp lib="0" loc="(500,510)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="K0"/>
+    </comp>
+    <comp lib="6" loc="(720,100)" name="Text">
+      <a name="text" val="State register"/>
+      <a name="halign" val="center"/>
+    </comp>
+    <comp lib="4" loc="(760,150)" name="J-K Flip-Flop">
+      <a name="label" val="Q1"/>
+    </comp>
+    <comp lib="0" loc="(700,150)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="J1"/>
+    </comp>
+    <comp lib="0" loc="(700,170)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="K1"/>
+    </comp>
+    <comp lib="0" loc="(710,200)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(750,200)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLR"/>
+    </comp>
+    <comp lib="0" loc="(780,150)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="Q1"/>
+    </comp>
+    <comp lib="0" loc="(780,170)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="nQ1"/>
+    </comp>
+    <comp lib="4" loc="(760,290)" name="J-K Flip-Flop">
+      <a name="label" val="Q0"/>
+    </comp>
+    <comp lib="0" loc="(700,290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="J0"/>
+    </comp>
+    <comp lib="0" loc="(700,310)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="K0"/>
+    </comp>
+    <comp lib="0" loc="(710,340)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(750,340)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLR"/>
+    </comp>
+    <comp lib="0" loc="(780,290)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="Q0"/>
+    </comp>
+    <comp lib="0" loc="(780,310)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="nQ0"/>
+    </comp>
+    <comp lib="6" loc="(720,420)" name="Text">
+      <a name="text" val="Output logic"/>
+      <a name="halign" val="center"/>
+    </comp>
+    <comp lib="1" loc="(760,460)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(710,450)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="nQ1"/>
+    </comp>
+    <comp lib="0" loc="(710,470)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Q0"/>
+    </comp>
+    <comp lib="0" loc="(780,460)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="GREEN"/>
+    </comp>
+    <comp lib="1" loc="(760,530)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(710,520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Q1"/>
+    </comp>
+    <comp lib="0" loc="(710,540)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="nQ0"/>
+    </comp>
+    <comp lib="0" loc="(780,530)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="WARN"/>
+    </comp>
+    <comp lib="6" loc="(1000,120)" name="Text">
+      <a name="text" val="Outputs"/>
+      <a name="halign" val="center"/>
+    </comp>
+    <comp lib="5" loc="(960,160)" name="LED"/>
+    <comp lib="0" loc="(930,160)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Q0"/>
+    </comp>
+    <comp lib="6" loc="(988,165)" name="Text">
+      <a name="text" val="BARRIER UP (motor raise)"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(960,200)" name="LED"/>
+    <comp lib="0" loc="(930,200)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="nQ0"/>
+    </comp>
+    <comp lib="6" loc="(988,205)" name="Text">
+      <a name="text" val="RED light (stop)"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(960,240)" name="LED"/>
+    <comp lib="0" loc="(930,240)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="GREEN"/>
+    </comp>
+    <comp lib="6" loc="(988,245)" name="Text">
+      <a name="text" val="GREEN light (proceed)"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(960,280)" name="LED"/>
+    <comp lib="0" loc="(930,280)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="WARN"/>
+    </comp>
+    <comp lib="6" loc="(988,285)" name="Text">
+      <a name="text" val="CLOSING warning buzzer"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(960,340)" name="LED"/>
+    <comp lib="0" loc="(930,340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Q1"/>
+    </comp>
+    <comp lib="6" loc="(988,345)" name="Text">
+      <a name="text" val="state bit Q1"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="5" loc="(960,380)" name="LED"/>
+    <comp lib="0" loc="(930,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Q0"/>
+    </comp>
+    <comp lib="6" loc="(988,385)" name="Text">
+      <a name="text" val="state bit Q0"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+</project>
